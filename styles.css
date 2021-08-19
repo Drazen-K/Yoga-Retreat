@@ -1,0 +1,618 @@
+/* Navbar Section  */
+
+
+
+.nav-bg{
+    background-color:#CDF0EA;
+    border-radius: 20px;
+    border:3px solid #dee2e6;
+    padding: 0 45px;
+}
+
+
+
+
+/* First Section SM*/
+
+.host-pic-sm{
+   display: flex;
+}
+.host-sm{margin: auto;}
+
+.col-12 {
+    background-color: #CDF0EA;
+    text-align: center;
+}
+
+.heading{
+    background-color: #9DDED2;
+}
+
+.footer-list li {
+    text-decoration: none;
+    display: inline-block; 
+    padding: 8px 4px;
+}
+
+.footer-link-sm {
+    padding-left: 8px; 
+    color: black;
+    text-decoration: none; 
+    display: inline;
+}
+
+.copyright{display: block;
+    text-align: center;}
+
+.footer-list {padding: 0; margin: 0;}
+
+.footer-list-copy {padding: 0; margin: 0; text-align: center;}
+
+
+/* First Section MD  */
+
+.container-pictures{
+    position: relative;
+    width: 100%;
+    height: 425px;
+}
+
+.container-pictures .clip1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+}
+.container-pictures .clip2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+}
+.content1 {
+    position: absolute;
+    top: -100px;
+    left: 30px;
+    opacity:0;
+}
+.content2 {
+    position: absolute;
+    top: -100px;
+    left: 30px;
+    opacity:0;
+}
+
+.container-pictures .clip1:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+.container-pictures .clip2:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 1;
+}
+.clip1:hover .content1  {
+    position: absolute;
+    top: 68%;
+    width: 50%;
+    opacity: 3;
+    transition: 3s;
+    z-index: 1;
+    background:transparent;
+    color:black;
+}
+.clip2:hover .content2  {
+    position: absolute;
+    top: 74%;
+    width: 50%;
+    opacity: 3;
+    transition: 3s;
+    z-index: 1;
+    background:transparent;
+    color:rgb(247, 242, 242);
+}
+
+    /* Triple image section LG  */
+
+
+.img-cont{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Image 1 */
+
+.img-1-lg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    clip-path: polygon(50% 0%, 0 100%, 0 0);
+}
+.img-1-lg:hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
+}
+.content-1-lg {
+    position: absolute;
+    top: -100px;
+    right: 70px;
+    width: 40%;
+    background: transparent;
+    opacity:0;
+}
+
+.img-1-lg:hover .content-1-lg {
+    position: absolute;
+    top: 20px;
+    opacity: 3;
+    transition: 2s;
+    color:black;
+}
+
+/* Image 2 */
+
+.img-2-lg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+}
+.content-2-lg {
+    position: absolute;
+    bottom: -100px;
+    left: 70px;
+    width: 55%;
+    background: transparent;
+    opacity:0;
+}
+.img-2-lg:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    position: absolute;
+    top:0;
+    opacity: 3;
+    transition: 1.5s;
+    z-index: 1;
+}
+.content-2-lg, .content-3-lg {
+    color: cornsilk;
+}
+.img-2-lg:hover .content-2-lg {
+    position: absolute;
+    bottom: 25px;
+    opacity: 1;
+    transition: 2s;
+}
+
+/* Image 3  */
+
+.img-3-lg{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 100%, 48% 0, 99% 0, 100% 0);
+}
+
+.img-3-lg:hover{
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.content-3-lg{
+    position: absolute;
+    top: -10px;
+    left: 80px;
+    width: 50%;
+    padding: 20px;
+    background: transparent;
+    opacity:0;
+}
+.img-3-lg:hover .content-3-lg {
+    position: absolute;
+    top: 70%;
+    left: 80px;
+    opacity: 3;
+    transition: 2.5s;
+}
+
+.about-us-pic-lg{
+    height: 50vh;
+    display: flex;
+    margin: auto;
+}
+.back-top a {color: black;}
+
+ /* 4 image section XL  */
+
+/* Image 1 */
+
+.img-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    clip-path: polygon(0 0, 25% 0, 25% 100%, 0% 100%);
+}
+.img-1:hover {
+    transition: 2s;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.content-1 {
+    position: absolute;
+    top: -100px;
+    right: 70px;
+    width: 30%;
+    background: transparent;
+    opacity:0;
+}
+
+.img-1:hover .content-1 {
+    position: absolute;
+    top: 20px;
+    opacity: 3;
+    transition: 2s;
+    color:black;
+}
+
+/* Image 2 */
+
+.img-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(25% 0, 50% 0, 50% 100%, 25% 100%);
+}
+
+.img-2:hover {
+    z-index: 1;
+    transition: 2s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.content-2 {
+    position: absolute;
+    bottom: -100px;
+    left: 70px;
+    width: 40%;
+    background: transparent;
+    opacity:0;
+}
+
+.img-2:hover .content-2 {
+    position: absolute;
+    bottom: 25px;
+    opacity: 1;
+    transition: 2s;
+}
+
+.content-2, .content-3 {
+    color: cornsilk;
+}
+
+/* Image 3  */
+
+.img-3{
+    position: absolute;
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0, 75% 0, 75% 100%, 50% 100%);
+}
+
+.img-3:hover{
+    transition: 2s;
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.content-3{
+    position: absolute;
+    top: -10px;
+    left: 80px;
+    width: 35%;
+    padding: 20px;
+    background: transparent;
+    opacity:0;
+}
+.img-3:hover .content-3 {
+    position: absolute;
+    top: 70%;
+    left: 80px;
+    opacity: 3;
+    transition: 2.5s;
+}
+
+/* Image 4 */
+
+.img-4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(75% 0, 100% 0, 100% 100%, 75% 100%);
+}
+.content-4 {
+    position: absolute;
+    bottom: -100px;
+    left: 70px;
+    width: 30%;
+    background: transparent;
+    opacity:0;
+}
+.img-4:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 2s;
+    z-index: 1;
+}
+.content-4 {
+    color: cornsilk;
+}
+.img-4:hover .content-4 {
+    position: absolute;
+    bottom: 25px;
+    opacity: 1;
+    transition: 2s;
+}
+
+
+
+/* Second section */
+
+.col-6-col{
+    background-color: #CDF0EA;
+}
+.emoji {
+    width: 60px;
+    padding-top: 10px;
+}
+
+.teacher {
+    padding: 0 30px;
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.teacher-md {
+    padding: 0 20px;
+    text-align: center;
+    
+}
+.teacher-md p {font-size: 1.3vw;}
+
+.more-about{
+    background-color: #9DDED2;
+    border-radius: 10px;
+}
+.more-about a {text-decoration:none; color: black;font-weight: bold;}
+
+.instagram  {text-decoration:underline; color: black;font-weight: bold;}
+
+.more-about-lg a {text-decoration:none; color:black;}
+
+.more-about-xl a {text-decoration:none; color:black;font-size: 1.4vw;}
+
+.back-btn{margin-left: 85%;}
+.back-btn-md {margin-left: 77%;}
+.back-btn-sm {
+    margin-left: 75%;
+    font-size: 2.8vw;
+}
+
+.background {background-color: #CDF0EA;}
+
+.lg-expectation{
+    text-align: center;
+    background-color: #9DDED2;
+    border-radius: 10px;
+}
+
+.side-lg1{text-align: center; font-size: 1.5vw;}
+
+.side-xl1{text-align: center; font-size: 1.5vw;}
+
+.side-xl1 .more-about a { 
+    font-size: 1.2vw;
+ } 
+
+.offer li{
+    padding: 10px 0px;
+    list-style: none;
+    font-size: 4vw;
+}
+.offer-md li{
+    padding: 10px 0px;
+    list-style: none;
+    font-size: 2.4vw;
+}
+.offer li:before{
+    content: "\2713";
+    color: rgb(8, 8, 8);
+    padding-right: 20px;
+}
+.offer {padding-left: 0px;}
+
+
+.offer-lg li{
+    padding: 10px 0px;
+    list-style: none;
+    font-size: 1.6vw;
+}
+.offer-lg li:before{
+    content: "\2713";
+    color: rgb(8, 8, 8);
+    padding-right: 20px;
+}
+.offer-lg {padding-left: 0px;}
+
+
+.img-scale-sm {
+    height: 290px;
+}
+
+.img-scale-md {
+    height: 450px;
+}
+
+.img-scale-xl {
+    height: 500px;
+    width: 100%;
+}
+
+.more-map-lg li{
+    display: block;
+    margin: auto;
+    font-size: 1.6vw;
+    text-decoration:none;
+    line-height: 20px;
+    background-color: #9DDED2;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.more-map-xl li{
+    display: block;
+    margin: auto;
+    font-size: 1.6vw;
+    text-decoration:none;
+    line-height: 30px;
+    background-color: #9DDED2;
+    border-radius: 40px;
+    width: 80%;
+    text-align: center;
+}
+
+.more-map-lg ul{padding:20px 0 0 0 ;}
+
+.more-map-xl ul{padding:30px 0 0 0 ;}
+
+.more-map-lg ul li a {
+    text-decoration:underline; 
+    color: black;
+}
+
+.more-map-xl ul li a {
+    text-decoration:underline; 
+    color: black;
+}
+
+.map{
+    padding-top: 20px;
+}  
+
+.map-xl{
+    padding-top: 30px;
+}  
+
+.contact-xl-para p{text-align: center;font-size: 1.3vw;}
+
+.contact-xl-para p a{ text-decoration:underline; 
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+@media  screen and (min-width:320px) and (max-width:426px) {
+    #md-wrapper{display: none;}
+    #lg-wrapper{display: none;}
+    #xl-wrapper{display: none;}
+    .nav-link{font-size: 14px; font-weight: bold;}
+    .navbar-brand img {width: 80px; height: 70px;}
+    .footer-link-sm img {width: 55px; height: 50px; padding: 0;}
+    #sm-wrapper h2{font-size: 19px;}
+    #sm-wrapper h4{font-size: 16px;}
+    #sm-wrapper p{font-size: 14px;}
+    .booking-mob{max-width: 425px;}
+}
+
+@media  screen and (min-width:426px) and (max-width:768px) {
+    #sm-wrapper{display: none;}
+    #lg-wrapper{display: none;}
+    #xl-wrapper{display: none;}
+    .nav-link{font-size: 16px; font-weight: bold;}
+    .navbar-brand img {width: 100px; height: 90px;}
+    .footer-link-sm img {width: 75px; height: 70px; padding: 0;}
+    .footer-link-sm {padding: 0 3.2vw; font-size: 2.2vw;}
+    #md-wrapper h2 {font-size: 20px;}
+    #md-wrapper h4{font-size: 18px;}
+    #md-wrapper p{font-size: 17px;}
+}
+
+@media  screen and (min-width:769px) and (max-width:1024px) {
+    #sm-wrapper{display: none;}
+    #md-wrapper{display: none;}
+    #xl-wrapper{display: none;}
+    .nav-link{font-size: 17px; font-weight: bold;}
+    .navbar-brand img {width: 100px; height: 90px;}
+    .footer-link-sm img {width: 80px; height: 75px; padding: 0;}
+    .footer-link-sm {padding: 0 2.4vw; font-size: 1.8vw;}
+    #lg-wrapper h2 {font-size: 21px;}
+    #lg-wrapper h4{font-size: 18px;}
+    #lg-wrapper p{font-size: 1.5vw;}
+    .teacher button {font-size: 1.4vw;}
+}
+
+@media  screen and (min-width:1025px) and (max-width:1540px) {
+    #sm-wrapper{display: none;}
+    #md-wrapper{display: none;}
+    #lg-wrapper{display: none;}
+    .nav-link{font-size: 20px; font-weight: bold;}
+    .navbar-brand img {width: 100px; height: 90px;}
+    .footer-link-sm img {width: 90px; height: 85px; padding: 0;}
+    .footer-link-sm {padding: 0 3.5vw; font-size: 1.3vw;}
+    .offer-lg li{
+        padding: 10px 0px;
+        list-style: none;
+        font-size: 1.3vw;
+    }
+    .more-map-xl ul li a {font-size:1.3vw;}
+    #xl-wrapper h2 {font-size: 1.7vw;}
+    #About-us-xl p {font-size: 1.3vw;}
+    #About-us-xl button {font-size: 1.1vw;}
+    #contact-xl-text p {font-size: 1.2vw;}
+    #contact-xl-text button a {font-size: 1.2vw;}
+    .btn-contact p {font-size: 1.3vw;}
+    .btn-contact button a {font-size: 1.3vw;}
+}
+
+@media  screen and (min-width:1441px) and (max-width:2560px) {
+    #sm-wrapper{display: none;}
+    #md-wrapper{display: none;}
+    #lg-wrapper{display: none;}
+    .nav-link{font-size: 22px; font-weight: bold;}
+    .navbar-brand img {width: 120px; height: 100px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
