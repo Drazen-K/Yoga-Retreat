@@ -10,8 +10,6 @@
 }
 
 
-
-
 /* First Section SM*/
 
 .host-pic-sm{
@@ -41,12 +39,11 @@
     display: inline;
 }
 
-.copyright{display: block;
-    text-align: center;}
+.copyright{text-align: center;}
 
-.footer-list {padding: 0; margin: 0;}
+.footer-list {padding: 0; margin: 0; text-align: center;}
 
-.footer-list-copy {padding: 0; margin: 0; text-align: center;}
+
 
 
 /* First Section MD  */
@@ -463,7 +460,7 @@
 
 
 .img-scale-sm {
-    height: 290px;
+    height: 57vw;
 }
 
 .img-scale-md {
@@ -474,6 +471,7 @@
     height: 500px;
     width: 100%;
 }
+
 
 .more-map-lg li{
     display: block;
@@ -535,12 +533,13 @@
     #md-wrapper{display: none;}
     #lg-wrapper{display: none;}
     #xl-wrapper{display: none;}
-    .nav-link{font-size: 14px; font-weight: bold;}
-    .navbar-brand img {width: 80px; height: 70px;}
-    .footer-link-sm img {width: 55px; height: 50px; padding: 0;}
-    #sm-wrapper h2{font-size: 19px;}
-    #sm-wrapper h4{font-size: 16px;}
-    #sm-wrapper p{font-size: 14px;}
+    .nav-link{font-size: 3.5vw; font-weight: bold;}
+    .navbar-brand img {width: 17vw; height: 17vw;}
+    .footer-link-sm img {width: 13vw; height: 13vw; padding: 0;}
+    .footer-link-sm {padding: 0 2.2vw; font-size: 4vw;}
+    #sm-wrapper h2{font-size: 4.5vw;}
+    #sm-wrapper h4{font-size: 3.8vw;}
+    #sm-wrapper p{font-size: 3.4vw;}
     .booking-mob{max-width: 425px;}
 }
 
