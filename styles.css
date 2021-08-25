@@ -382,13 +382,19 @@
 
 .teacher {
     padding: 0 30px;
-    text-align: center;
+    text-align: justify;
+    font-size: 1.7vw;
+}
+
+.teacher-sm {
+    padding: 0 3.5vw;
+    text-align: justify;
     font-size: 1.7vw;
 }
 
 .teacher-md {
     padding: 0 20px;
-    text-align: center;
+    text-align: justify;
     
 }
 .teacher-md p {font-size: 1.3vw;}
@@ -526,6 +532,55 @@
     font-weight: bold;
 }
 
+/* Java Script buttons */
+
+#btn-host-div, #btn-teacher-div, #btn-host-div-lg, #btn-teacher-div-lg, #btn-host-div-sm, #btn-teacher-div-sm  {
+    border-radius: 10px;
+    border: solid 4px silver;
+    text-align: justify;    
+    padding: 1vw 1.5vw;
+    margin: 1.5vw 0;
+    display: none;
+}
+
+#btn-host-div h5, #btn-teacher-div h5, #btn-host-div-lg h5, #btn-teacher-div-lg h5, #btn-host-div-sm h5, #btn-teacher-div-sm h5 {margin-bottom: 1.3vw; text-align: center;}
+
+
+/* Booking form  */
+
+.booking-form{
+    margin: 2vw 17vw;
+    background-color: #9DDED2;
+    border-radius: 20px;
+    border: solid 2px;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.booking-form input {
+    background-color: rgb(105, 226, 200);
+    border-radius: 5px;
+    font-size: 1.2vw;
+}
+
+.form-line {
+    padding-top: 2.5vw;
+    padding-left: 15vw;
+    text-align: left;
+}
+
+.form-line-submit{
+    padding:3vw 0;
+}
+
+.form-line-submit .submit-btn{
+    border-radius: 12px;
+    background-color: rgb(45, 167, 45);
+    font-weight: bold;
+    width: 10vw;
+}
+
+select, textarea {background-color: rgb(105, 226, 200); border-radius: 5px; font-size: 1.1vw;}
 
 
 
@@ -541,6 +596,11 @@
     #sm-wrapper h4{font-size: 3.8vw;}
     #sm-wrapper p{font-size: 3.4vw;}
     .booking-mob{max-width: 425px;}
+    .booking-form{margin:2vw 0.5vw; font-size: 3vw;}
+    .booking-form input{font-size: 2.8vw; }
+    select, textarea {font-size: 2.8vw;}
+    .form-line {padding-top: 3.5vw;}
+    .form-line-submit .submit-btn{width: 18vw;}
 }
 
 @media  screen and (min-width:426px) and (max-width:768px) {
@@ -554,6 +614,10 @@
     #md-wrapper h2 {font-size: 20px;}
     #md-wrapper h4{font-size: 18px;}
     #md-wrapper p{font-size: 17px;}
+    .booking-form{margin:2vw 6vw; font-size: 2vw;}
+    .booking-form input{font-size: 1.9vw;}
+    select, textarea {font-size: 1.9vw;}
+    .form-line-submit .submit-btn{width: 12vw;}
 }
 
 @media  screen and (min-width:769px) and (max-width:1024px) {
@@ -568,6 +632,10 @@
     #lg-wrapper h4{font-size: 18px;}
     #lg-wrapper p{font-size: 1.5vw;}
     .teacher button {font-size: 1.4vw;}
+    .booking-form{margin:2vw 16vw; font-size: 1.6vw;}
+    .booking-form input{font-size: 1.5vw;}
+    select, textarea {font-size: 1.5vw;}
+    .form-line-submit .submit-btn{width: 12vw;}
 }
 
 @media  screen and (min-width:1025px) and (max-width:1540px) {

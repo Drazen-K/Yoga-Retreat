@@ -351,26 +351,64 @@
                   <img class="img-fluid host-sm" src="images/Host 2.png" alt="Your host picture" />
                </div>
 
-               <div class="container-sm col-6 background border border-3 rounded mt-1 mb-1 teacher">
+               <div
+                  class="container-sm col-6 background border border-3 rounded mt-1 mb-1 teacher-sm"
+               >
                   <h4 class="pt-2">Retreat host</h4>
                   <p>
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aliquam
-                     nemo hic porro quaeralaudantium quo hic porro quaeralaudantium quo.
+                     Lorem ipsum dolor sit amet consec tetur adipis icing elit. Iste maxime ut tempo
+                     ribus elig endi ratione autem, nihil rerum. Lorem, ipsum dolor sit amet consec.
+                  </p>
+                  <button
+                     id="btn-host-sm"
+                     class="mb-3 more-about"
+                     style="display: flex; margin: auto; font-size: 2vw"
+                  >
+                     More...
+                  </button>
+               </div>
+
+               <div id="btn-host-div-sm" class="background">
+                  <h6>Yoga retreat host</h6>
+                  <p>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit corporis
+                     dolor rem nisi voluptatibus id similique harum nihil ab fugiat eum voluptatem
+                     pariatur dolorem suscipit maxime autem temporibus sapiente sed, accusantium
+                     veniam! Soluta aliquid numquam neque sunt quasi similique harum dolorum.
+                     Quibusdam hic officia cum nulla voluptas?
                   </p>
                </div>
             </div>
 
             <div class="row">
-               <div class="container-sm col-6 background border border-3 rounded teacher">
+               <div class="container-sm col-6 background border border-3 rounded teacher-sm">
                   <h4 class="pt-2">Yoga teacher</h4>
                   <p>
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur aliquam
-                     nemo hic porro quaeralaudantium quo.
+                     Lorem ipsum dolor sit amet consec tetur adipis icing elit. Iste maxime ut tempo
+                     ribus elig endi ratione autem, nihil rerum. Lorem, ipsum dolor sit amet consec.
                   </p>
+                  <button
+                     id="btn-teacher-sm"
+                     class="mb-3 more-about"
+                     style="display: flex; margin: auto; font-size: 2vw"
+                  >
+                     More...
+                  </button>
                </div>
 
                <div class="container-sm host-pic-sm col-6 background border border-3 rounded">
                   <img class="img-fluid host-sm" src="images/coach 1.png" alt="Your host picture" />
+               </div>
+
+               <div id="btn-teacher-div-sm" class="background">
+                  <h6>Yoga teacher</h6>
+                  <p>
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit corporis
+                     dolor rem nisi voluptatibus id similique harum nihil ab fugiat eum voluptatem
+                     pariatur dolorem suscipit maxime autem temporibus sapiente sed, accusantium
+                     veniam! Soluta aliquid numquam neque sunt quasi similique harum dolorum.
+                     Quibusdam hic officia cum nulla?
+                  </p>
                </div>
             </div>
 
@@ -452,12 +490,91 @@
                <div class="container-sm col-12 border border-3 rounded">
                   <h2 class="gy-2 mt-2 rounded-pill heading">Retreat Booking Form</h2>
 
-                  <div class="container-sm">
-                     <script
-                        type="text/javascript"
-                        src="https://form.jotform.com/jsform/212185489077364"
-                     ></script>
-                  </div>
+                  <form id="form-xl" class="booking-form">
+                     <div class="form-line">
+                        <label for="Prefix">Prefix:</label>
+                        <select name="Prefix" id="Prefix" required>
+                           <option value="Mr.">Mr.</option>
+                           <option value="Mrs.">Mrs.</option>
+                           <option value="Miss">Miss</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="First-name">First name:</label>
+                        <input
+                           type="text"
+                           name="First name"
+                           id="First-name"
+                           placeholder="John"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Last-name">Last name:</label>
+                        <input
+                           type="text"
+                           name="Last name"
+                           id="Last-name"
+                           placeholder="Doe"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Email">Email:</label>
+                        <input
+                           type="email"
+                           name="Email"
+                           id="Email"
+                           placeholder="johndoe@gmail.com"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Phone-number">Phone number:</label>
+                        <input
+                           type="tel"
+                           name="Phone number"
+                           id="Phone-number"
+                           placeholder="+000 00 000 0000"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Date">Starting date:</label>
+                        <input type="date" name="Starting date" id="Date" required />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Room-type">Room type:</label>
+                        <select name="Room type" id="Room-type" required>
+                           <option value="" disable selected>Please choose your option:</option>
+                           <option value="Single room">Single room - 1300</option>
+                           <option value="Double room">Double room per person - 1100 Euro</option>
+                           <option value="Twin room">Twin room - 1000 Euro</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Additional-comments">Additional comments</label>
+                        <textarea
+                           name="Additional comments"
+                           id="Additional-comments"
+                           cols="30"
+                           rows="5"
+                        >
+Any additional comments...</textarea
+                        >
+                     </div>
+
+                     <div class="form-line-submit">
+                        <input type="submit" value="Book now" class="submit-btn" />
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
@@ -871,13 +988,12 @@
                      <h4 class="mt-3 pb-4">Retreat host</h4>
 
                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-                        recusandae ab ducimus ad placeat iusto delectus culpa possimus quidem vel,
-                        consequatur magnam, accusantium aliquid! Optio, fugit! Nesciunt, totam
-                        laboriosam? Consectetur laborum aperiam.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio beatae
+                        numquam corrupti laudantium totam ab eaque reprehenderit sit in. Blanditiis
+                        aliquid non nam in adipisci possimus ratione voluptate sint ad ut,
+                        praesentium velit dolorum commodi ullam ab maxime incidunt. Neque obcaecati
+                        facere consequatur dolorum fuga culpa deserunt optio.
                      </p>
-
-                     <button class="mb-3 more-about">More about your Yoga host...</button>
                   </div>
                </div>
             </div>
@@ -887,11 +1003,11 @@
                   <div class="teacher-md">
                      <h4 class="mt-3 pb-4">Yoga teacher</h4>
                      <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consec tetur
-                        aliquam nemo hic porro quaerala udantium quo. Conse ctetur aliquam nemo hic
-                        porro quae ralaudan tium quo.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quidem, aut
+                        quam labore placeat fugiat hic quasi! Quia natus laborum, facere cum ullam
+                        tempora beatae neque! Excepturi, expedita. Odio ducimus rem, voluptate, esse
+                        ut eligendi est distinctio laudantium.
                      </p>
-                     <button class="mb-3 more-about">More about your teacher...</button>
                   </div>
                </div>
 
@@ -980,12 +1096,92 @@
                <div class="col-12 border border-3 rounded">
                   <h2 class="gy-2 mt-2 rounded-pill heading">Retreat Booking Form</h2>
 
-                  <div>
-                     <script
-                        type="text/javascript"
-                        src="https://form.jotform.com/jsform/212185489077364"
-                     ></script>
-                  </div>
+                  <form id="form-xl" class="booking-form">
+                     <div class="form-line">
+                        <label for="Prefix">Prefix:</label>
+                        <select name="Prefix" id="Prefix" required>
+                           <option value="Mr.">Mr.</option>
+                           <option value="Mrs.">Mrs.</option>
+                           <option value="Miss">Miss</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="First-name">First name:</label>
+                        <input
+                           type="text"
+                           name="First name"
+                           id="First-name"
+                           placeholder="John"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Last-name">Last name:</label>
+                        <input
+                           type="text"
+                           name="Last name"
+                           id="Last-name"
+                           placeholder="Doe"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Email">Email:</label>
+                        <input
+                           type="email"
+                           name="Email"
+                           id="Email"
+                           placeholder="johndoe@gmail.com"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Phone-number">Phone number:</label>
+                        <input
+                           type="tel"
+                           name="Phone number"
+                           id="Phone-number"
+                           placeholder="+000 00 000 0000"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Date">Starting date:</label>
+                        <input type="date" name="Starting date" id="Date" required />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Room-type">Room type:</label>
+                        <select name="Room type" id="Room-type" required>
+                           <option value="" disable selected>Please choose your option:</option>
+                           <option value="Single room">Single room - 1300</option>
+                           <option value="Double room">Double room per person - 1100 Euro</option>
+                           <option value="Twin room">Twin room - 1000 Euro</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Additional-comments">Additional comments</label>
+                        <textarea
+                           name="Additional comments"
+                           id="Additional-comments"
+                           cols="30"
+                           rows="5"
+                           style="display: block"
+                        >
+Any additional comments...</textarea
+                        >
+                     </div>
+
+                     <div class="form-line-submit">
+                        <input type="submit" value="Book now" class="submit-btn" />
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
@@ -1503,11 +1699,28 @@
                      <h4 class="mt-3 pb-2">Retreat host</h4>
 
                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam ut
-                        voluptate ipsam earum quis voluptas suscipit libero perferendis iure.
+                        Lorem ipsum dolor sit amet conse ctetur adipisi cing elit. Error exce pturi
+                        sapi ente ali quam fugit reiciendis amet, assumenda sed blanditiis ad
+                        suscipit quis aut facilis sunt dicta facere unde rerum.
                      </p>
 
-                     <button class="mb-3 more-about">More about your Yoga host...</button>
+                     <button
+                        id="btn-host-lg"
+                        class="mb-3 more-about"
+                        style="display: flex; margin: auto"
+                     >
+                        More about your Yoga host...
+                     </button>
+                  </div>
+                  <div id="btn-host-div-lg">
+                     <h5>Yoga retreat host</h5>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit corporis
+                        dolor rem nisi voluptatibus id similique harum nihil ab fugiat eum
+                        voluptatem pariatur dolorem suscipit maxime autem temporibus sapiente sed,
+                        accusantium veniam! Soluta aliquid numquam neque sunt quasi similique harum
+                        dolorum. Quibusdam hic officia cum nulla voluptas?
+                     </p>
                   </div>
                </div>
 
@@ -1533,10 +1746,28 @@
                   <div class="teacher">
                      <h4 class="mt-3 pb-2">Yoga teacher</h4>
                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deserunt vitae
-                        sit sapiente aperiam nihil?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error exce pturi
+                        sapi ente ali quam fugit reiciendis amet, assumenda sed blanditiis ad
+                        suscipit quis aut facilis sunt dicta facere unde rerum.
                      </p>
-                     <button class="mb-3 more-about">More about your teacher...</button>
+                     <button
+                        id="btn-teacher-lg"
+                        class="mb-3 more-about"
+                        style="display: flex; margin: auto"
+                     >
+                        More about your teacher...
+                     </button>
+                  </div>
+
+                  <div id="btn-teacher-div-lg">
+                     <h5>Yoga retreat host</h5>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit corporis
+                        dolor rem nisi voluptatibus id similique harum nihil ab fugiat eum
+                        voluptatem pariatur dolorem suscipit maxime autem temporibus sapiente sed,
+                        accusantium veniam! Soluta aliquid numquam neque sunt quasi similique harum
+                        dolorum. Quibusdam hic officia cum nulla voluptas?
+                     </p>
                   </div>
                </div>
 
@@ -1647,12 +1878,92 @@
                <div class="col-12 border border-3 rounded">
                   <h2 class="gy-2 mt-2 rounded-pill heading">Retreat Booking Form</h2>
 
-                  <div>
-                     <script
-                        type="text/javascript"
-                        src="https://form.jotform.com/jsform/212185489077364"
-                     ></script>
-                  </div>
+                  <form id="form-xl" class="booking-form">
+                     <div class="form-line">
+                        <label for="Prefix">Prefix:</label>
+                        <select name="Prefix" id="Prefix" required>
+                           <option value="Mr.">Mr.</option>
+                           <option value="Mrs.">Mrs.</option>
+                           <option value="Miss">Miss</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="First-name">First name:</label>
+                        <input
+                           type="text"
+                           name="First name"
+                           id="First-name"
+                           placeholder="John"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Last-name">Last name:</label>
+                        <input
+                           type="text"
+                           name="Last name"
+                           id="Last-name"
+                           placeholder="Doe"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Email">Email:</label>
+                        <input
+                           type="email"
+                           name="Email"
+                           id="Email"
+                           placeholder="johndoe@gmail.com"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Phone-number">Phone number:</label>
+                        <input
+                           type="tel"
+                           name="Phone number"
+                           id="Phone-number"
+                           placeholder="+000 00 000 0000"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Date">Starting date:</label>
+                        <input type="date" name="Starting date" id="Date" required />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Room-type">Room type:</label>
+                        <select name="Room type" id="Room-type" required>
+                           <option value="" disable selected>Please choose your option:</option>
+                           <option value="Single room">Single room - 1300</option>
+                           <option value="Double room">Double room per person - 1100 Euro</option>
+                           <option value="Twin room">Twin room - 1000 Euro</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Additional-comments">Additional comments:</label>
+                        <textarea
+                           name="Additional comments"
+                           id="Additional-comments"
+                           cols="30"
+                           rows="5"
+                           style="display: block"
+                        >
+Any additional comments...</textarea
+                        >
+                     </div>
+
+                     <div class="form-line-submit">
+                        <input type="submit" value="Book now" class="submit-btn" />
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
@@ -2177,10 +2488,28 @@
 
                      <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ullam ut
-                        voluptate ipsam earum quis voluptas suscipit libero perferendis iure.
+                        voluptate ipsam earum quis voluptas suscipit libero perferendis iure. Lorem
+                        ipsum dolor sit amet consectetur ipsum.
                      </p>
 
-                     <button class="mb-3 more-about">More about your Yoga host...</button>
+                     <button
+                        id="btn-host"
+                        class="mb-3 more-about"
+                        style="display: flex; margin: auto"
+                     >
+                        More about your Yoga host...
+                     </button>
+                  </div>
+
+                  <div id="btn-host-div">
+                     <h5>Yoga retreat host</h5>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit corporis
+                        dolor rem nisi voluptatibus id similique harum nihil ab fugiat eum
+                        voluptatem pariatur dolorem suscipit maxime autem temporibus sapiente sed,
+                        accusantium veniam! Soluta aliquid numquam neque sunt quasi similique harum
+                        dolorum. Quibusdam hic officia cum nulla voluptas?
+                     </p>
                   </div>
                </div>
 
@@ -2207,9 +2536,27 @@
                      <h4 class="mt-3 pb-2">Yoga teacher</h4>
                      <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse deserunt vitae
-                        sit sapiente aperiam dese runt vitae sit sapiente?
+                        sit sapiente aperiam dese runt vitae sit sapiente? Lorem ipsum dolor sit
+                        amet consectetur dese runt vitae esse deser.
                      </p>
-                     <button class="mb-3 more-about">More about your teacher...</button>
+                     <button
+                        id="btn-teacher"
+                        class="mb-3 more-about"
+                        style="display: flex; margin: auto"
+                     >
+                        More about your teacher...
+                     </button>
+                  </div>
+
+                  <div id="btn-teacher-div">
+                     <h5>Yoga teacher</h5>
+                     <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit corporis
+                        dolor rem nisi voluptatibus id similique harum nihil ab fugiat eum
+                        voluptatem pariatur dolorem suscipit maxime autem temporibus sapiente sed,
+                        accusantium veniam! Soluta aliquid numquam neque sunt quasi similique harum
+                        dolorum. Quibusdam hic officia cum nulla?
+                     </p>
                   </div>
                </div>
 
@@ -2318,14 +2665,95 @@
          <div id="Booking-xl" class="container-lg gx-4 mt-2">
             <div class="row">
                <div class="col-12 border border-5 rounded">
-                  <h2 class="gy-2 mt-2 rounded-pill heading">Retreat Booking Form</h2>
+                  <h2 class="gy-2 mt-2 rounded-pill heading border border-5 rounded">
+                     Retreat Booking Form
+                  </h2>
 
-                  <div>
-                     <script
-                        type="text/javascript"
-                        src="https://form.jotform.com/jsform/212185489077364"
-                     ></script>
-                  </div>
+                  <form id="form-xl" class="booking-form">
+                     <div class="form-line">
+                        <label for="Prefix">Prefix:</label>
+                        <select name="Prefix" id="Prefix" required>
+                           <option value="Mr.">Mr.</option>
+                           <option value="Mrs.">Mrs.</option>
+                           <option value="Miss">Miss</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="First-name">First name:</label>
+                        <input
+                           type="text"
+                           name="First name"
+                           id="First-name"
+                           placeholder="John"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Last-name">Last name:</label>
+                        <input
+                           type="text"
+                           name="Last name"
+                           id="Last-name"
+                           placeholder="Doe"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Email">Email:</label>
+                        <input
+                           type="email"
+                           name="Email"
+                           id="Email"
+                           placeholder="johndoe@gmail.com"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Phone-number">Phone number:</label>
+                        <input
+                           type="tel"
+                           name="Phone number"
+                           id="Phone-number"
+                           placeholder="+000 00 000 0000"
+                           required
+                        />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Date">Starting date:</label>
+                        <input type="date" name="Starting date" id="Date" required />
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Room-type">Room type:</label>
+                        <select name="Room type" id="Room-type" required>
+                           <option value="" disable selected>Please choose your option:</option>
+                           <option value="Single room">Single room - 1300</option>
+                           <option value="Double room">Double room per person - 1100 Euro</option>
+                           <option value="Twin room">Twin room - 1000 Euro</option>
+                        </select>
+                     </div>
+
+                     <div class="form-line">
+                        <label for="Additional-comments">Additional comments</label>
+                        <textarea
+                           name="Additional comments"
+                           id="Additional-comments"
+                           cols="30"
+                           rows="5"
+                        >
+Any additional comments...</textarea
+                        >
+                     </div>
+
+                     <div class="form-line-submit">
+                        <input type="submit" value="Book now" class="submit-btn" />
+                     </div>
+                  </form>
                </div>
             </div>
          </div>
@@ -2376,6 +2804,8 @@
             </div>
          </div>
       </div>
+
+      <script src="index.js" charset="utf-8"></script>
 
       <!-- Option 1: Bootstrap Bundle with Popper -->
       <script
