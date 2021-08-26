@@ -105,3 +105,193 @@ teacherSm.addEventListener('click',()=>
         teacherSm.innerHTML='Close details';
     }
 })
+
+//   hover over lisener
+
+const addDiv = document.querySelector('#offerAdd')
+const offer = document.querySelector('#offer');
+
+ offer.addEventListener('mouseover', mouseover());
+ offer.addEventListener('mouseover', mouseout());
+
+    function mouseover(){
+     addDiv.innerHTML +='<h5> Hey. If You like what You see here You can still be a part of this amazing experience! Please note, our spaces are limeted.</h5>'
+     addDiv.h5.style.backgroundColor='green';
+
+    }
+     
+    function mouseout(){
+        addDiv.innerHTML.p.style.display='none';
+    }
+
+// form data storing on LG screen
+
+const form = document.querySelector('#formXl');
+
+form.addEventListener('submit', e=>{
+
+    e.preventDefault();
+    
+    const formData = {
+        salutation:form.prefixXl.value,
+        firstName:form.firstNameXl.value,
+        lastName:form.lastNameXl.value,
+        email:form.emailXl.value,
+        phoneNumber:form.phoneNumberXl.value,
+        startingDate:form.dateXl.value,
+        roomType:form.roomTypeXl.value,
+        comments:form.commentsXl.value
+    };
+
+    db.collection('Yoga retreat').add(formData).then(()=>{
+        console.log('Data form added');}).catch(err=>{
+            console.log(err);
+        });
+
+        alert('Thank you ' + form.firstNameXl.value + '. Your retreat is booked successfully!')
+})
+
+// form data storing on mobile screen
+
+const formSm = document.querySelector('#formSm');
+
+formSm.addEventListener('submit', e=>{
+
+    e.preventDefault();
+    
+    const formDataSm = {
+        salutation:formSm.prefixSm.value,
+        firstName:formSm.firstNameSm.value,
+        lastName:formSm.lastNameSm.value,
+        email:formSm.emailSm.value,
+        phoneNumber:formSm.phoneNumberSm.value,
+        startingDate:formSm.dateSm.value,
+        roomType:formSm.roomTypeSm.value,
+        comments:formSm.commentsSm.value
+    };
+
+    db.collection('Yoga retreat').add(formDataSm).then(()=>{
+        console.log('Data form added');}).catch(err=>{
+            console.log(err);
+    });
+
+        alert('Thank you ' + formSm.firstNameSm.value + '. Your retreat is booked successfully!')
+})
+
+
+// Live form Names validation
+
+let firstNamePattern = /^[a-zA-Z \-]{3,20}$/;
+
+form.firstName.addEventListener('keyup', (e)=>{
+    if(firstNamePattern.test(form.firstName.value)){
+        //console.log('success');
+       form.firstName.style.backgroundColor = 'rgb(33, 172, 33)';
+       form.firstName.style.color = 'white';
+    }
+    else {
+        form.firstName.style.backgroundColor = 'rgb(212, 55, 55)';
+        form.firstName.style.color = 'white';
+    }
+})
+
+form.Last_name.addEventListener('keyup', (e)=>{
+    if(firstNamePattern.test(form.Last_name.value)){
+        //console.log('success');
+       form.Last_name.style.backgroundColor = 'rgb(33, 172, 33)';
+       form.Last_name.style.color = 'white';
+    }
+    else {
+        form.Last_name.style.backgroundColor = 'rgb(212, 55, 55)';
+        form.Last_name.style.color = 'white';
+    }
+})
+
+//  Email validation
+
+let emailPattern = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,7})$/
+
+form.Email.addEventListener('keyup', (e)=>{
+    if(emailPattern.test(form.Email.value)){
+        //console.log('success');
+       form.Email.style.backgroundColor = 'rgb(33, 172, 33)';
+       form.Email.style.color = 'white';
+    }
+    else {
+        form.Email.style.backgroundColor = 'rgb(212, 55, 55)';
+        form.Email.style.color = 'white';
+    }
+})
+
+//   Phone validation
+
+let mobilePattern = /^[0-9\+]{10,13}$/
+
+form.Phone_number.addEventListener('keyup', (e)=>{
+    if(mobilePattern.test(form.Phone_number.value)){
+        //console.log('success');
+       form.Phone_number.style.backgroundColor = 'rgb(33, 172, 33)';
+       form.Phone_number.style.color = 'white';
+    }
+    else {
+        form.Phone_number.style.backgroundColor = 'rgb(212, 55, 55)';
+        form.Phone_number.style.color = 'white';
+    }
+})
+
+
+//     Validation for names on Sm screen
+
+
+formSm.First_name.addEventListener('keyup', (e)=>{
+    if(firstNamePattern.test(formSm.First_name.value)){
+        //console.log('success');
+       formSm.First_name.style.backgroundColor = 'rgb(33, 172, 33)';
+       formSm.First_name.style.color = 'white';
+    }
+    else {
+        formSm.First_name.style.backgroundColor = 'rgb(212, 55, 55)';
+        formSm.First_name.style.color = 'white';
+    }
+})
+
+formSm.Last_name.addEventListener('keyup', (e)=>{
+    if(firstNamePattern.test(formSm.Last_name.value)){
+        //console.log('success');
+       formSm.Last_name.style.backgroundColor = 'rgb(33, 172, 33)';
+       formSm.Last_name.style.color = 'white';
+    }
+    else {
+        formSm.Last_name.style.backgroundColor = 'rgb(212, 55, 55)';
+        formSm.Last_name.style.color = 'white';
+    }
+})
+
+
+//   Email validation on Sm screen
+
+formSm.Email.addEventListener('keyup', (e)=>{
+    if(emailPattern.test(formSm.Email.value)){
+        //console.log('success');
+       formSm.Email.style.backgroundColor = 'rgb(33, 172, 33)';
+       formSm.Email.style.color = 'white';
+    }
+    else {
+        formSm.Email.style.backgroundColor = 'rgb(212, 55, 55)';
+        formSm.Email.style.color = 'white';
+    }
+})
+
+// Phone validation on Sm screen
+
+formSm.Phone_numberSm.addEventListener('keyup', (e)=>{
+    if(mobilePattern.test(formSm.Phone_numberSm.value)){
+        //console.log('success');
+       formSm.Phone_numberSm.style.backgroundColor = 'rgb(33, 172, 33)';
+       formSm.Phone_numberSm.style.color = 'white';
+    }
+    else {
+        formSm.Phone_numberSm.style.backgroundColor = 'rgb(212, 55, 55)';
+        formSm.Phone_numberSm.style.color = 'white';
+    }
+})

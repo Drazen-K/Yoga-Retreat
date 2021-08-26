@@ -490,10 +490,10 @@
                <div class="container-sm col-12 border border-3 rounded">
                   <h2 class="gy-2 mt-2 rounded-pill heading">Retreat Booking Form</h2>
 
-                  <form id="form-xl" class="booking-form">
+                  <form id="formSm" class="booking-form">
                      <div class="form-line">
-                        <label for="Prefix">Prefix:</label>
-                        <select name="Prefix" id="Prefix" required>
+                        <label for="prefixSm">Prefix:</label>
+                        <select name="Prefix" id="prefixSm" required>
                            <option value="Mr.">Mr.</option>
                            <option value="Mrs.">Mrs.</option>
                            <option value="Miss">Miss</option>
@@ -501,74 +501,75 @@
                      </div>
 
                      <div class="form-line">
-                        <label for="First-name">First name:</label>
+                        <label for="firstNameSm">First name:</label>
                         <input
                            type="text"
-                           name="First name"
-                           id="First-name"
+                           name="First_name"
+                           id="firstNameSm"
                            placeholder="John"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Last-name">Last name:</label>
+                        <label for="Last_name">Last name:</label>
                         <input
                            type="text"
-                           name="Last name"
-                           id="Last-name"
+                           name="Last_name"
+                           id="lastNameSm"
                            placeholder="Doe"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Email">Email:</label>
+                        <label for="Email_sm">Email:</label>
                         <input
                            type="email"
                            name="Email"
-                           id="Email"
+                           id="emailSm"
                            placeholder="johndoe@gmail.com"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Phone-number">Phone number:</label>
+                        <label for="Phone_number">Phone number:</label>
                         <input
                            type="tel"
-                           name="Phone number"
-                           id="Phone-number"
+                           name="Phone_numberSm"
+                           id="phoneNumberSm"
                            placeholder="+000 00 000 0000"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Date">Starting date:</label>
-                        <input type="date" name="Starting date" id="Date" required />
+                        <label for="dateSm">Starting date:</label>
+                        <input type="date" name="Starting date" id="dateSm" required />
                      </div>
 
                      <div class="form-line">
-                        <label for="Room-type">Room type:</label>
-                        <select name="Room type" id="Room-type" required>
+                        <label for="Room_ype">Room type:</label>
+                        <select name="Room type" id="roomTypeSm" required>
                            <option value="" disable selected>Please choose your option:</option>
-                           <option value="Single room">Single room - 1300</option>
-                           <option value="Double room">Double room per person - 1100 Euro</option>
-                           <option value="Twin room">Twin room - 1000 Euro</option>
+                           <option value="Single room">Single room 1300.00 &#8364;</option>
+                           <option value="Double room">
+                              Double room per person 1100.00 &#8364;
+                           </option>
+                           <option value="Twin room">Twin room 1000.00 &#8364;</option>
                         </select>
                      </div>
 
                      <div class="form-line">
-                        <label for="Additional-comments">Additional comments</label>
+                        <label for="commentsSm">Additional comments</label>
                         <textarea
                            name="Additional comments"
-                           id="Additional-comments"
+                           id="commentsSm"
+                           placeholder="Additional comments..."
                            cols="30"
                            rows="5"
-                        >
-Any additional comments...</textarea
-                        >
+                        ></textarea>
                      </div>
 
                      <div class="form-line-submit">
@@ -1096,7 +1097,7 @@ Any additional comments...</textarea
                <div class="col-12 border border-3 rounded">
                   <h2 class="gy-2 mt-2 rounded-pill heading">Retreat Booking Form</h2>
 
-                  <form id="form-xl" class="booking-form">
+                  <form id="form-md" class="booking-form">
                      <div class="form-line">
                         <label for="Prefix">Prefix:</label>
                         <select name="Prefix" id="Prefix" required>
@@ -1159,9 +1160,11 @@ Any additional comments...</textarea
                         <label for="Room-type">Room type:</label>
                         <select name="Room type" id="Room-type" required>
                            <option value="" disable selected>Please choose your option:</option>
-                           <option value="Single room">Single room - 1300</option>
-                           <option value="Double room">Double room per person - 1100 Euro</option>
-                           <option value="Twin room">Twin room - 1000 Euro</option>
+                           <option value="Single room">Single room 1300.00 &#8364;</option>
+                           <option value="Double room">
+                              Double room per person 1100.00 &#8364;
+                           </option>
+                           <option value="Twin room">Twin room 1000.00 &#8364;</option>
                         </select>
                      </div>
 
@@ -1878,7 +1881,7 @@ Any additional comments...</textarea
                <div class="col-12 border border-3 rounded">
                   <h2 class="gy-2 mt-2 rounded-pill heading">Retreat Booking Form</h2>
 
-                  <form id="form-xl" class="booking-form">
+                  <form id="form-lg" class="booking-form">
                      <div class="form-line">
                         <label for="Prefix">Prefix:</label>
                         <select name="Prefix" id="Prefix" required>
@@ -1941,9 +1944,11 @@ Any additional comments...</textarea
                         <label for="Room-type">Room type:</label>
                         <select name="Room type" id="Room-type" required>
                            <option value="" disable selected>Please choose your option:</option>
-                           <option value="Single room">Single room - 1300</option>
-                           <option value="Double room">Double room per person - 1100 Euro</option>
-                           <option value="Twin room">Twin room - 1000 Euro</option>
+                           <option value="Single room">Single room 1300.00 &#8364;</option>
+                           <option value="Double room">
+                              Double room per person 1100.00 &#8364;
+                           </option>
+                           <option value="Twin room">Twin room 1000.00 &#8364;</option>
                         </select>
                      </div>
 
@@ -2669,10 +2674,10 @@ Any additional comments...</textarea
                      Retreat Booking Form
                   </h2>
 
-                  <form id="form-xl" class="booking-form">
+                  <form id="formXl" class="booking-form">
                      <div class="form-line">
-                        <label for="Prefix">Prefix:</label>
-                        <select name="Prefix" id="Prefix" required>
+                        <label for="prefixXl">Prefix:</label>
+                        <select name="Prefix" id="prefixXl" required>
                            <option value="Mr.">Mr.</option>
                            <option value="Mrs.">Mrs.</option>
                            <option value="Miss">Miss</option>
@@ -2680,74 +2685,75 @@ Any additional comments...</textarea
                      </div>
 
                      <div class="form-line">
-                        <label for="First-name">First name:</label>
+                        <label for="firstNameXl">First name:</label>
                         <input
                            type="text"
-                           name="First name"
-                           id="First-name"
+                           name="firstName"
+                           id="firstNameXl"
                            placeholder="John"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Last-name">Last name:</label>
+                        <label for="lastNameXl">Last name:</label>
                         <input
                            type="text"
-                           name="Last name"
-                           id="Last-name"
+                           name="Last_name"
+                           id="lastNameXl"
                            placeholder="Doe"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Email">Email:</label>
+                        <label for="emailXl">Email:</label>
                         <input
                            type="email"
                            name="Email"
-                           id="Email"
+                           id="emailXl"
                            placeholder="johndoe@gmail.com"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Phone-number">Phone number:</label>
+                        <label for="phoneNumberXl">Phone number:</label>
                         <input
                            type="tel"
-                           name="Phone number"
-                           id="Phone-number"
+                           name="Phone_number"
+                           id="phoneNumberXl"
                            placeholder="+000 00 000 0000"
                            required
                         />
                      </div>
 
                      <div class="form-line">
-                        <label for="Date">Starting date:</label>
-                        <input type="date" name="Starting date" id="Date" required />
+                        <label for="dateXl">Starting Date:</label>
+                        <input type="date" name="Starting date" id="dateXl" required />
                      </div>
 
                      <div class="form-line">
-                        <label for="Room-type">Room type:</label>
-                        <select name="Room type" id="Room-type" required>
+                        <label for="roomTypeXl">Room type:</label>
+                        <select name="Room type" id="roomTypeXl" required>
                            <option value="" disable selected>Please choose your option:</option>
-                           <option value="Single room">Single room - 1300</option>
-                           <option value="Double room">Double room per person - 1100 Euro</option>
-                           <option value="Twin room">Twin room - 1000 Euro</option>
+                           <option value="Single room">Single room 1300.00 &#8364;</option>
+                           <option value="Double room">
+                              Double room per person 1100.00 &#8364;
+                           </option>
+                           <option value="Twin room">Twin room 1000.00 &#8364;</option>
                         </select>
                      </div>
 
                      <div class="form-line">
-                        <label for="Additional-comments">Additional comments</label>
+                        <label for="commentsXl">Additional comments</label>
                         <textarea
                            name="Additional comments"
-                           id="Additional-comments"
+                           id="commentsXl"
+                           placeholder="Additional comments..."
                            cols="30"
                            rows="5"
-                        >
-Any additional comments...</textarea
-                        >
+                        ></textarea>
                      </div>
 
                      <div class="form-line-submit">
@@ -2805,6 +2811,32 @@ Any additional comments...</textarea
          </div>
       </div>
 
+      <!-- Firebase script  -->
+
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+      <script>
+         // Your web app's Firebase configuration
+         // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+         var firebaseConfig = {
+            apiKey: "AIzaSyC-FivMg1jZ80kheEPeZ71S4cBCtJKgr4k",
+            authDomain: "yoga-retreat-64467.firebaseapp.com",
+            projectId: "yoga-retreat-64467",
+            storageBucket: "yoga-retreat-64467.appspot.com",
+            messagingSenderId: "123960959463",
+            appId: "1:123960959463:web:ea7eecd591523732ca9d42",
+            measurementId: "G-5JEC3T0159",
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+         //firebase.analytics();
+         const db = firebase.firestore();
+      </script>
+
+      <!-- Java Script -->
       <script src="index.js" charset="utf-8"></script>
 
       <!-- Option 1: Bootstrap Bundle with Popper -->
