@@ -106,23 +106,9 @@ teacherSm.addEventListener('click',()=>
     }
 })
 
-//   hover over lisener
 
-const addDiv = document.querySelector('#offerAdd')
-const offer = document.querySelector('#offer');
 
- offer.addEventListener('mouseover', mouseover());
- offer.addEventListener('mouseover', mouseout());
 
-    function mouseover(){
-     addDiv.innerHTML +='<h5> Hey. If You like what You see here You can still be a part of this amazing experience! Please note, our spaces are limeted.</h5>'
-     addDiv.h5.style.backgroundColor='green';
-
-    }
-     
-    function mouseout(){
-        addDiv.innerHTML.p.style.display='none';
-    }
 
 // form data storing on LG screen
 
