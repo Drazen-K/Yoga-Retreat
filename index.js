@@ -107,9 +107,6 @@ teacherSm.addEventListener('click',()=>
 })
 
 
-
-
-
 // form data storing on LG screen
 
 const form = document.querySelector('#formXl');
